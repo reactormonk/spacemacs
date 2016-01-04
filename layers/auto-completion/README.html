@@ -3,11 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2015-11-23 Mon 13:48 -->
+<!-- 2016-01-04 Mon 01:59 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Auto-completion layer</title>
 <meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Sylvain Benner" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -221,7 +222,7 @@ To use this configuration layer add it to your <code>~/.spacemacs</code>
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>setq-default dotspacemacs-configuration-layers '<span class="org-rainbow-delimiters-depth-2">(</span>auto-completion<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-2">setq-default</span> <span class="ATTRLIST-1">dotspacemacs-configuration-layers</span> '<span class="org-rainbow-delimiters-depth-2">(</span><span class="ATTRLIST">auto-completion</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 </div>
@@ -269,12 +270,12 @@ The default configuration of the layer is:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>setq-default dotspacemacs-configuration-layers '<span class="org-rainbow-delimiters-depth-2">(</span>
-  <span class="org-rainbow-delimiters-depth-3">(</span>auto-completion <span class="org-builtin">:variables</span>
-                   auto-completion-return-key-behavior 'complete
-                   auto-completion-tab-key-behavior 'cycle
-                   auto-completion-complete-with-key-sequence nil
-                   auto-completion-private-snippets-directory nil<span class="org-rainbow-delimiters-depth-3">)</span>
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-8">setq-default</span> <span class="ATTRLIST-7">dotspacemacs-configuration-layers</span> '<span class="org-rainbow-delimiters-depth-2">(</span>
+  <span class="org-rainbow-delimiters-depth-3">(</span><span class="ATTRLIST-6">auto-completion</span> <span class="org-builtin">:variables</span>
+                   <span class="ATTRLIST-5">auto-completion-return-key-behavior</span> '<span class="ATTRLIST-4">complete</span>
+                   <span class="ATTRLIST-3">auto-completion-tab-key-behavior</span> '<span class="ATTRLIST-2">cycle</span>
+                   <span class="ATTRLIST-1">auto-completion-complete-with-key-sequence</span> <span class="ATTRLIST">nil</span>
+                   <span class="ATTRLIST-5">auto-completion-private-snippets-directory</span> <span class="ATTRLIST">nil</span><span class="org-rainbow-delimiters-depth-3">)</span>
                    <span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
@@ -295,9 +296,9 @@ To enable docstring tooltips set <code>auto-completion-enable-help-tooltip</code
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>setq-default dotspacemacs-configuration-layers
-  '<span class="org-rainbow-delimiters-depth-2">(</span>auto-completion <span class="org-builtin">:variables</span>
-                    auto-completion-enable-help-tooltip t<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-4">setq-default</span> <span class="ATTRLIST-3">dotspacemacs-configuration-layers</span>
+  '<span class="org-rainbow-delimiters-depth-2">(</span><span class="ATTRLIST-2">auto-completion</span> <span class="org-builtin">:variables</span>
+                    <span class="ATTRLIST-1">auto-completion-enable-help-tooltip</span> <span class="ATTRLIST">t</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 </div>
@@ -316,9 +317,9 @@ The variable has no effect when <code>auto-complete</code> is used.
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>setq-default dotspacemacs-configuration-layers
-  '<span class="org-rainbow-delimiters-depth-2">(</span>auto-completion <span class="org-builtin">:variables</span>
-                    auto-completion-enable-sort-by-usage t<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-4">setq-default</span> <span class="ATTRLIST-3">dotspacemacs-configuration-layers</span>
+  '<span class="org-rainbow-delimiters-depth-2">(</span><span class="ATTRLIST-2">auto-completion</span> <span class="org-builtin">:variables</span>
+                    <span class="ATTRLIST-1">auto-completion-enable-sort-by-usage</span> <span class="ATTRLIST">t</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 </div>
@@ -334,9 +335,9 @@ the popup, set the variable <code>auto-completion-enable-snippets-in-popup</code
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span>setq-default dotspacemacs-configuration-layers
-              '<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-rainbow-delimiters-depth-3">(</span>auto-completion <span class="org-builtin">:variables</span>
-                                 auto-completion-enable-snippets-in-popup t<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-4">setq-default</span> <span class="ATTRLIST-3">dotspacemacs-configuration-layers</span>
+              '<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-rainbow-delimiters-depth-3">(</span><span class="ATTRLIST-2">auto-completion</span> <span class="org-builtin">:variables</span>
+                                 <span class="ATTRLIST-1">auto-completion-enable-snippets-in-popup</span> <span class="ATTRLIST">t</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
 </pre>
 </div>
 </div>
@@ -390,7 +391,7 @@ Here is an example to add <code>company</code> auto-completion to python buffer:
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp"><span class="org-comment-delimiter">;; </span><span class="org-comment">Define the buffer local company backend variable</span>
-<span class="org-rainbow-delimiters-depth-1">(</span>spacemacs|defvar-company-backends python-mode<span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-1">spacemacs|defvar-company-backends</span> <span class="ATTRLIST">python-mode</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 </div>
@@ -402,25 +403,25 @@ Here is an example to add <code>company</code> auto-completion to python buffer:
 <div class="org-src-container">
 
 <pre class="src src-emacs-lisp"><span class="org-comment-delimiter">;; </span><span class="org-comment">Add the relevant packages to the layer</span>
-<span class="org-rainbow-delimiters-depth-1">(</span>setq python-packages
-  '<span class="org-rainbow-delimiters-depth-2">(</span>...
-    company
-    company-anaconda
-    ...<span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="ATTRLIST-16">setq</span> <span class="ATTRLIST-15">python-packages</span>
+  '<span class="org-rainbow-delimiters-depth-2">(</span><span class="ATTRLIST-14">...</span>
+    <span class="ATTRLIST-13">company</span>
+    <span class="ATTRLIST-12">company-anaconda</span>
+    <span class="ATTRLIST-14">...</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 
 <span class="org-comment-delimiter">;; </span><span class="org-comment">Configure the packages</span>
-<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword">when</span> <span class="org-rainbow-delimiters-depth-2">(</span>configuration-layer/layer-usedp 'auto-completion<span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-keyword"><span class="ATTRLIST-11">when</span></span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="ATTRLIST-10">configuration-layer/layer-usedp</span> '<span class="ATTRLIST-9">auto-completion</span><span class="org-rainbow-delimiters-depth-2">)</span>
 
   <span class="org-comment-delimiter">;; </span><span class="org-comment">Hook company to python-mode</span>
-  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">defun</span> <span class="org-function-name">python/post-init-company</span> <span class="org-rainbow-delimiters-depth-3">()</span>
-    <span class="org-rainbow-delimiters-depth-3">(</span>spacemacs|add-company-hook python-mode<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword"><span class="ATTRLIST-8">defun</span></span> <span class="org-function-name"><span class="ATTRLIST-13">python/post-init-company</span></span> <span class="org-rainbow-delimiters-depth-3">()</span>
+    <span class="org-rainbow-delimiters-depth-3">(</span><span class="ATTRLIST-7">spacemacs|add-company-hook</span> <span class="ATTRLIST-6">python-mode</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span>
 
   <span class="org-comment-delimiter">;; </span><span class="org-comment">Add the backend to the major-mode specific backend list</span>
-  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">defun</span> <span class="org-function-name">python/init-company-anaconda</span> <span class="org-rainbow-delimiters-depth-3">()</span>
-    <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">use-package</span> <span class="org-constant">company-anaconda</span>
-      <span class="org-builtin">:if</span> <span class="org-rainbow-delimiters-depth-4">(</span>configuration-layer/package-usedp 'company<span class="org-rainbow-delimiters-depth-4">)</span>
-      <span class="org-builtin">:defer</span> t
-      <span class="org-builtin">:init</span> <span class="org-rainbow-delimiters-depth-4">(</span>push 'company-anaconda company-backends-python-mode<span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+  <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword"><span class="ATTRLIST-8">defun</span></span> <span class="org-function-name"><span class="ATTRLIST-5">python/init-company-anaconda</span></span> <span class="org-rainbow-delimiters-depth-3">()</span>
+    <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword"><span class="ATTRLIST-4">use-package</span></span> <span class="org-constant">company-anaconda</span>
+      <span class="org-builtin">:if</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="ATTRLIST-3">configuration-layer/package-usedp</span> '<span class="ATTRLIST-13">company</span><span class="org-rainbow-delimiters-depth-4">)</span>
+      <span class="org-builtin">:defer</span> <span class="ATTRLIST-2">t</span>
+      <span class="org-builtin">:init</span> <span class="org-rainbow-delimiters-depth-4">(</span><span class="ATTRLIST-1">push</span> '<span class="ATTRLIST-12">company-anaconda</span> <span class="ATTRLIST">company-backends-python-mode</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
 </pre>
 </div>
 </div>
@@ -596,7 +597,8 @@ Here is an example to add <code>company</code> auto-completion to python buffer:
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2015-11-23 Mon 13:48</p>
+<p class="author">Author: Sylvain Benner</p>
+<p class="date">Created: 2016-01-04 Mon 01:59</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
